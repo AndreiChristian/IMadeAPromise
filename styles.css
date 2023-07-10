@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Noto+Serif+Makasar&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-family: "Noto Serif Makasar", serif;
+  scroll-behavior: smooth;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Limelight", cursive;
+  color: #ff5555; /* Primary red tone */
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+}
+
+a {
+  color: #ff9999; /* Lighter red tone */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff2d2d; /* Bright red tone on hover */
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #262626;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+code {
+  color: #ffaaaa; /* Light red tone for code */
+  font-family: "Courier", monospace;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #595959;
+}
+
+button {
+  background-color: #ff5555; /* Primary red tone for button */
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff2d2d; /* Brighter red tone on button hover */
+  color: #f5f5f5;
+}
+
+section {
+  /* scroll-snap-align: start; */
+
+  box-sizing: border-box;
+  padding: 10vh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 5vw;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  width: 100%;
+  gap: 5vh;
+}
+
+.cp {
+  color: #ff5555;
+}
+
+@media (max-width: 1000px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+
+  height: 70px;
+  background-color: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 0 2vw;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  height: 4px;
+  background: #ff5555;
+  width: 0%;
+}
+
+ul {
+  list-style: none;
+}
